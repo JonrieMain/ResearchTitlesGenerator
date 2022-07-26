@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Thesis/Capstone Title ~ Generator</title>
+	<title>Research/Capstone Title ~ Generator</title>
 	<style type="text/css">
 		*{
 			margin: 0;
