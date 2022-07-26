@@ -102,7 +102,7 @@
 	<div class="main">
 		<abbr title="This tool randomly generates 250 research title ideas for your reference or inspiration.
 Currently, the generated titles are for computer-related majors."><img src="https://cdn-icons-png.flaticon.com/512/1/1176.png"></abbr>
-		<h1>Research Title & Capstone Generator<span>Created By:<a href="https://jonrie.xyz"> Jonrie</a></span></h1>
+		<h1>Research Titles & Capstone Generator<span>Created By:<a href="https://jonrie.xyz"> Jonrie</a></span></h1>
 		<p class="result">click generate to start!</p>
 		<button class="start none">Generate</button>
 	</div>
