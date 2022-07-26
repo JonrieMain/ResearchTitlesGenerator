@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thesis/Capstone Title ~ Generator</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.main{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 100vh;
+			width: 100%;
+			gap: 1rem;
+			padding: .3rem;
+		}
+		.main abbr{
+			cursor: pointer;
+		}
+		.main abbr img{
+			position: absolute;
+			top: 1%;
+			right: 1%;
+			height: 100%;
+			width: 100%;
+			max-width: 1.5rem;
+			max-height: 1.5rem;
+		}
+		.main h1{
+			position: relative;
+			font-size: 4rem;
+			text-align: center;
+		}
+		.main h1 span{
+			position: absolute;
+			top: -6%;
+			right: 0;
+			font-size: 1.2rem;
+			min-width: 160px;
+			background: red;
+			padding: .1rem;
+		}
+		.main h1 span a{
+			color: #000;
+		}
+		.main p{
+			width: 100%;
+			height: 100%;
+			max-height: 10rem;
+			max-width: 25rem;
+			background: #d1d1d1;
+			opacity: .9;
+			border-radius: 2rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.3rem;
+			color: #000;
+			font-weight: bold;
+			word-break: break-word;
+			text-align: center;
+			font-family: cursive;
+		}
+		.main .start{
+			cursor: pointer;
+			border: 3px solid #000;
+			background: #000;
+			color: #fff;
+			padding: .5rem 2rem;
+			border-radius: 2rem;
+			font-size: 1.5rem;
+			transition: .5s linear;
+		}
+		.main .start:hover{
+			background: linear-gradient(transparent , #d1d1d1);
+			color: #000;
+		}
+
+		@media all and (max-width: 678px){
+			.main h1{
+			font-size: 2.5rem;
+		}
+
+		.main h1 span{
+			top: -40%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	</style>
+</head>
+<body>
+
+<!-- http://dynamicdrive.com/dynamicindex9/encrypter.htm  -->
+
+
+	<div class="main">
+		<abbr title="This tool randomly generates 250 research title ideas for your reference or inspiration.
+Currently, the generated titles are for computer-related majors."><img src="https://cdn-icons-png.flaticon.com/512/1/1176.png"></abbr>
+		<h1>Research Title & Capstone Generator<span>Created By:<a href="https://jonrie.xyz"> Jonrie</a></span></h1>
+		<p class="result">click generate to start!</p>
+		<button class="start none">Generate</button>
+	</div>
+
+
+</body>
+<script type="text/javascript" src="./js/titleGenerator.js"></script>
+</html>
