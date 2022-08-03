@@ -6,6 +6,10 @@ const result = document.querySelector('.result');
 btn.addEventListener('click',()=>{
 	if(btn.classList.contains('none')){
 		btn.innerText="Generate another!"
+		btn.classList.remove('none')
+		btn.classList.add('active')
+		result.innerText=getTitle();
+	}else{
 		result.innerText=getTitle();
 	}
 })
