@@ -22,34 +22,22 @@
 			overflow: hidden;
 			padding-top: 4rem;
 		}
-		.main .note{
-			position: fixed;
-			min-width: 100%;
-			top: 1%;
-			left: 0;
+		.main marquee{
 			font-size: 1.4rem;
 			font-family: sans-serif;
-			animation: noteAnimate 20s cubic-bezier(0.23, 0.56, 0.42, 0.51) infinite;
-			background: #d1d1d1;
+            background: #d1d1d1;
 			color: #000;
 			padding: .2rem;
-			min-width: 1550px;
+            position: absolute;
+            top: .1rem;
+            left: 0;
 		}
-		.main .note img{
+		.main marquee img{
 			height: 100%;
 			width: 100%;
 			max-width: 1.4rem;
 			max-height: 1.4rem;
 			margin-right: .4rem;
-		}
-
-		@keyframes noteAnimate{
-			0%{
-				left: 150%;
-			}
-			100%{
-				left: -150%;
-			}
 		}
 
 		.main abbr img{
@@ -81,8 +69,8 @@
 		.main .result{
 			width: 100%;
 			height: 100%;
-			max-height: 10rem;
-			max-width: 25rem;
+			max-height: 12rem;
+			max-width: 50rem;
 			background: #d1d1d1;
 			opacity: .9;
 			border-radius: 2rem;
@@ -111,19 +99,6 @@
 			color: #000;
 		}
 
-	@media all and (min-width: 401px) and (max-width: 1000px){
-			/* change */
-
-			@keyframes noteAnimate{
-				0%{
-					left: 150%;
-				}
-				100%{
-					left: -400%;
-				}
-			}
-		}
-
 
 		@media all and (max-width: 678px){
 			.main h1{
@@ -136,20 +111,6 @@
 				transform: translateX(-50%);
 			}
 
-
-			 /* change */
-			@media all and (max-width: 400px){
-						/* change */
-
-			@keyframes noteAnimate{
-				0%{
-					left: 150%;
-				}
-				100%{
-					left: -800%;
-				}
-			}
-		}
 			}
 
 		</style>
@@ -160,13 +121,17 @@
 
 
 		<div class="main">
-			<p class="note"><img src="https://cdn-icons-png.flaticon.com/512/1/1176.png">This tool randomly generates 250 research titles ideas for your reference or inspiration.
-			Currently, the generated titles are for computer-related majors.</p>
+
+			<marquee behavior="scroll" scrollamount="10px" direction="left"><img src="https://cdn-icons-png.flaticon.com/512/1/1176.png">This tool randomly generates research titles ideas for your reference or inspiration. Currently, the produced titles are for computer-related majors.
+            </marquee>
+
+
 			<h1>Research Titles & Capstone Generator<span>Created By:<a href="https://jonrie.xyz"> Jonrie</a></span></h1>
 			<p class="result">click generate to start!</p>
 			<button class="start none">Generate</button>
 		</div>
 
+<div class="hehe"></div>
 
 	</body>
 	<script type="text/javascript" src="./js/titleGenerator.js"></script>
